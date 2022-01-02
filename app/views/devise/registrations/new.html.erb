@@ -20,6 +20,19 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+  
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name  %>
+  </div>
+
+  
+  <div class="field">
+    <%= f.label :apellidos %><br />
+    <%= f.text_field :apellidos %>
+  </div>
+
+  <%= f.select :isTeacher,[["Soy un alumno", false], ["Soy un profesor", true]] %>
 
   <div class="actions">
     <%= f.submit "Sign up" %>
